@@ -1,0 +1,33 @@
+.counter-container {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid #777;
+    border-radius: 1rem;
+  }
+
+  .counter-container h3 > span {
+    color: rgba(5, 94, 40);
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .counter-container div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .counter-container div input {
+    border-radius: 1rem;
+    width: 7rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+  
+  .counter-container div input:last-child {
+    margin-bottom: 1rem;
+  }
+  

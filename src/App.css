@@ -1,0 +1,10 @@
+body {
+  overflow: hidden;
+  background: linear-gradient(to right, hsl(216, 100%, 50%), hsla(191, 100%, 50%, 0.853));
+}
+
+.content-container {
+  position: relative;
+  max-width: 1240px;
+  margin: 1rem auto;
+}

@@ -1,0 +1,50 @@
+.todo-list-wrapper {
+    width: 30rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-list-search {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.todo-list-search > input {
+    width: 60%;
+    height: 2rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.todo-list-search > input:focus {
+    background-color: rgba(103, 250, 255, 0.476);
+}
+
+.glass {
+    width: 4rem;
+    height: 2.25rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+	background: linear-gradient(rgb(93, 208, 249),rgb(19, 232, 19));
+	text-decoration: none;
+    border-width: 0;
+}
+
+.glass::after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.glass:hover {
+	background: linear-gradient(rgb(6, 204, 6), rgb(52, 252, 98));
+}
