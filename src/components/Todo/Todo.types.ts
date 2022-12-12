@@ -1,13 +1,14 @@
-type TodoListTypes = {
-    list: TodoItemTypes[]
+interface TodoItemTypes {
+    id: string,
+    item: string,
+    isCompleted: boolean,
 }
 
-type TodoItemTypes = {
-    item: string,
-    isCompleted: boolean
+interface TodoItemActions {
+    alterTodoItem: (id: string, actionType: string) => void
 }
 
 export type {
-    TodoListTypes,
-    TodoItemTypes
+    TodoItemTypes,
+    TodoItemActions
 }

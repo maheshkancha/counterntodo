@@ -13,24 +13,27 @@ const Counter = () => {
   };
 
   return (
-    <div className='counter-container'>
-      <h3>Count value is: <span>{count}</span></h3>
-      <div>
-        <input
-          type='button'
-          name='decrement'
-          value='Decrement'
-          disabled={count === 0}
-          onClick={decrement}
-        />
-        <input
-          type='button'
-          name='increment'
-          value='Increment'
-          onClick={increment}
-        />
+    <>
+      <h2 className='counter-header'>Counter</h2>
+      <div className='counter-wrapper'>
+        <h3>Count value is: <span>{count}</span></h3>
+        <div>
+          <input
+            type='button'
+            name='decrement'
+            value='Decrement'
+            disabled={count === 0}
+            onClick={decrement}
+          />
+          <input
+            type='button'
+            name='increment'
+            value='Increment'
+            onClick={increment}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -1,17 +1,10 @@
 import TodoList from "./TodoList/TodoList";
 
-const todoList = [
-    { item: 'Complete todo app', isCompleted: false },
-    { item: 'Jenking training', isCompleted: true },
-    { item: 'Goal settings', isCompleted: true }
-];
-
 const Todo = () => {
-    return (
-        <>
-            <TodoList list={todoList} />
-        </>
-    );
+    return <>
+        <h2 className="todo-header">ToDo</h2>
+        <TodoList />
+    </>
 }
 
 export default Todo;

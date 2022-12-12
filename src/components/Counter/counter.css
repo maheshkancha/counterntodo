@@ -1,4 +1,8 @@
-.counter-container {
+.counter-header {
+  color: #fff;
+}
+
+.counter-wrapper {
     width: 25rem;
     display: flex;
     flex-direction: column;
@@ -6,28 +10,29 @@
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid #777;
     border-radius: 1rem;
+    box-shadow: 0 4px 4px 2px rgb(3, 238, 250);
   }
 
-  .counter-container h3 > span {
+  .counter-wrapper h3 > span {
     color: rgba(5, 94, 40);
     font-size: 1.5rem;
     font-weight: 600;
   }
   
-  .counter-container div {
+  .counter-wrapper div {
     width: 80%;
     display: flex;
     justify-content: space-between;
   }
   
-  .counter-container div input {
+  .counter-wrapper div input {
     border-radius: 1rem;
     width: 7rem;
     height: 2rem;
     cursor: pointer;
   }
   
-  .counter-container div input:last-child {
+  .counter-wrapper div input:last-child {
     margin-bottom: 1rem;
   }
   

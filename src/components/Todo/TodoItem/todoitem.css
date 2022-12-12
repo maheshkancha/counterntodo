@@ -1,17 +1,21 @@
 .todo-item-wrapper {
     display: flex;
-    width: 100%;
+    width: 95%;
     margin-top: 0.5rem;
+    padding: 5px;
+    border: 1px solid blue;
+    box-shadow: 2px 3px rgb(7, 7, 97);
+    background-color: #aab8fe;
+    color: #fff;
 }
 
 .todo-item-wrapper div:nth-child(1) {
-    width: 70%;
-    padding-top: 0.25rem;
+    width: 80%;
     font-size: 1.5rem;
 }
 
 .todo-item-action-button {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
